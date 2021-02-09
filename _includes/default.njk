@@ -1,28 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>{{metaTitle or title}}</title>
-    <meta charset="UTF-8"/>
-    {% if description %}
-      <meta name="description" content="{{description}}"/>
-    {% endif %}
-    <meta http-equiv="x-ua-compatible" content="ie=edge"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover"/>
-    <link rel="stylesheet" href="/style.css?v={% version %}"/>
-    {% block head %}{% endblock %}
-    <script src="/js/alpine.js?v={% version %}"></script>
-  </head>
+  {% include "_head.njk" %}
   <body class="px-4">
-    <nav class="py-1 mb-4 lg:mb-8 text-center lg:text-left">
-      <a class="font-bold" href="/">Daniel Clarke | Web developer</a>
-    </nav>
-    <div class="max-w-2xl mx-auto">
-      <h1 class="text-xl lg:text-2xl font-bold mb-4">{{pageTitle or title}}</h1>
-      <main class="max-w-2xl mx-auto">
-        {% block content %}
-          {{ content | safe }}
-        {% endblock %}
-      </main>
+    {% include "_nav.njk" %}
+    <div class="max-w-xl mx-auto">
+      {% include "_page-title.njk" %}
+      {% if fileIsHtml %}
+        {% include "_main-html.njk" %}
+      {% else %}
+        {% include "_main-markdown.njk" %}
+      {% endif %}
     </div>
   </body>
 </html>

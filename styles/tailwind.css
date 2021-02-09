@@ -1,6 +1,18 @@
 @tailwind base;
 @tailwind components;
 
+main {
+  @apply leading-relaxed;
+}
+
+main p {
+  @apply mb-5;
+}
+
+.markdown a {
+  @apply text-blue-700 underline;
+}
+
 .button-group {
   @apply -mx-1 mt-5 mb-8;
 }
