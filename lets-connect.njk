@@ -1,0 +1,10 @@
+---
+title: Let's connect!
+layout: default-html.njk
+---
+
+{% for item in contact.items %}
+  <p class="mb-2">
+    <a href="{{ item.link }}" class="link">{{ item.name }}</a>
+  </p>
+{% endfor %}

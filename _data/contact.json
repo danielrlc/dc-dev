@@ -1,0 +1,24 @@
+{
+  "items": [
+      {
+          "name": "Email: daniel at danielrlc dot com",
+          "link": "mailto:daniel@danielrlc.com"
+      },
+      {
+          "name": "LinkedIn",
+          "link": "https://www.linkedin.com/in/daniel-clarke-997302109/"
+      },
+      {
+          "name": "GitHub",
+          "link": "https://github.com/danielrlc"
+      },
+      {
+          "name": "GitLab",
+          "link": "https://gitlab.com/danielrlc"
+      },
+      {
+          "name": "Codewars",
+          "link": "https://www.codewars.com/users/danielrlc"
+      }
+  ]
+}
