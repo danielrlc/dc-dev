@@ -1,15 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
   {% include "_head.njk" %}
-  <body class="px-4">
+  <body class="px-4 leading-relaxed">
     {% include "_nav.njk" %}
     <div class="max-w-xl mx-auto">
       {% include "_page-title.njk" %}
-      {% if fileIsHtml %}
-        {% include "_main-html.njk" %}
-      {% else %}
-        {% include "_main-markdown.njk" %}
-      {% endif %}
+      {% include "_main-markdown.njk" %}
     </div>
   </body>
 </html>
